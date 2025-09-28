@@ -1,0 +1,84 @@
+traceroute www.onet.pl
+traceroute: Warning: www.onet.pl has multiple addresses; using 13.227.146.90
+traceroute to www.onet.pl (13.227.146.90), 64 hops max, 40 byte packets
+ 1  172.20.10.1 (172.20.10.1)  6.869 ms  3.213 ms  3.519 ms
+ 2  172.18.136.101 (172.18.136.101)  22.591 ms  37.736 ms  18.073 ms
+ 3  172.18.32.115 (172.18.32.115)  29.061 ms  19.147 ms  19.020 ms
+ 4  172.18.32.81 (172.18.32.81)  22.442 ms  37.773 ms  31.792 ms
+ 5  * * *
+ 6  80.50.105.17 (80.50.105.17)  118.795 ms  29.966 ms  35.763 ms
+ 7  195.116.35.222 (195.116.35.222)  27.700 ms  31.537 ms  34.577 ms
+ 8  99.83.112.74 (99.83.112.74)  29.792 ms  36.907 ms  29.494 ms
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+^C
+traceroute nasa.com
+traceroute to nasa.com (185.53.177.52), 64 hops max, 40 byte packets
+ 1  172.20.10.1 (172.20.10.1)  5.810 ms  3.428 ms  2.913 ms
+ 2  172.18.136.101 (172.18.136.101)  27.902 ms  18.729 ms  22.080 ms
+ 3  172.18.32.115 (172.18.32.115)  29.796 ms  34.505 ms  24.253 ms
+ 4  172.18.32.81 (172.18.32.81)  30.534 ms  28.452 ms  30.421 ms
+ 5  172.18.32.6 (172.18.32.6)  29.871 ms * *
+ 6  80.50.105.17 (80.50.105.17)  38.695 ms  18.411 ms  31.761 ms
+ 7  195.116.35.66 (195.116.35.66)  44.483 ms *  61.574 ms
+ 8  193.251.252.179 (193.251.252.179)  39.613 ms  43.727 ms  41.109 ms
+ 9  * * *
+10  be3763.ccr41.fra05.atlas.cogentco.com (154.54.76.209)  176.814 ms  49.184 ms  45.884 ms
+11  be7944.ccr22.muc03.atlas.cogentco.com (154.54.75.97)  64.485 ms
+    be5516.ccr21.muc03.atlas.cogentco.com (154.54.62.122)  55.288 ms  57.511 ms
+12  be3242.agr12.muc03.atlas.cogentco.com (130.117.3.42)  66.063 ms
+    be3245.agr12.muc03.atlas.cogentco.com (130.117.50.22)  52.760 ms
+    be3244.agr11.muc03.atlas.cogentco.com (130.117.50.14)  49.032 ms
+13  be3237.nr01.b015933-2.muc03.atlas.cogentco.com (154.25.15.178)  55.300 ms  56.248 ms
+    be3099.nr01.b015933-2.muc03.atlas.cogentco.com (154.25.15.174)  49.815 ms
+14  * *^C
+traceroute goggle.com
+traceroute: unknown host goggle.com
+
+https://gsuite.tools/de/traceroute
+
+traceroute to www.onet.pl (3.171.214.45), 30 hops max, 60 byte packets
+
+Hop	Host	IP	Time (ms)
+1	dgw1-wan-uk-lon1.ipv4.upcloud.com	83.136.248.1	0.174 ms
+2	100.69.45.177	100.69.45.177	0.361 ms
+3	172.17.252.37	172.17.252.37	0.345 ms
+4	172.17.255.2	172.17.255.2	0.338 ms
+5	r2-lon1-po1.uk.net.upcloud.com	94.237.0.121	0.332 ms
+6	decix2.amazon.com	80.81.195.152	17.353 ms
+7	decix1.amazon.com	80.81.194.152	17.424 ms
+8	*	*	*
+9	*	*	*
+10	*	*	*
+traceroute to www.nasa.com (185.53.177.52), 30 hops max, 60 byte packets
+
+Hop	Host	IP	Time (ms)
+1	dgw1-wan-uk-lon1.ipv4.upcloud.com	83.136.248.1	0.154 ms
+2	100.69.13.177	100.69.13.177	0.206 ms
+3	172.17.255.121	172.17.255.121	0.241 ms
+4	172.17.255.6	172.17.255.6	0.235 ms
+5	r1-lon1-po1.uk.net.upcloud.com	94.237.0.120	0.285 ms
+6	*	*	*
+7	*	*	*
+8	*	*	*
+9	*	*	*
+10	lag0-vl1001.core1-nbg-ncd.bb.wiit.network	85.14.244.114	18.740 ms
+11	lag0-vl6.core2-nbg-ncd.bb.wiit.network	85.14.244.108	18.762 ms
+12	lag0-vl1006.core2-muc2.bb.wiit.network	85.14.244.162	18.728 ms
+13	lag0-vl1006.core2-muc2.bb.wiit.network	85.14.244.162	18.722 ms
+14	*	*	*
+15	*	*	*
+16	*	*	*
+17	*	*	*
+18	*	*	*
+www.goggle.com
+Can't connect... Please check the host you queried. Not all IPv6 can be tracerouted.
+			
