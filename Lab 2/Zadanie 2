@@ -1,0 +1,10 @@
+T568B
+Pin (Strona A)	Pin (Strona B)	Stan	Opis usterki
+1	                    1	         OK	Prawidłowe połączenie
+2	                    2	         OK	Prawidłowe połączenie
+3	                    6		       Błąd 1: Zamieniona żyła biało-zielona z zieloną.
+4	                    4	         OK	Prawidłowe połączenie
+5	                    5	         OK	Prawidłowe połączenie
+6	                    3		       Błąd 1: Zamieniona żyła zielona z biało-zieloną.
+7	                    7	         OK	Prawidłowe połączenie
+8	                  Brak	       Błąd 2: Przewód brązowy nie styka się z pinem.
