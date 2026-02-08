@@ -1,0 +1,3 @@
+Co to jest walidacja XSD? Jest to proces sprawdzania, czy dokument XML jest zgodny ze ściśle zdefiniowanym schematem. W przeciwieństwie do DTD, XSD pozwala na definiowanie typów danych (np. liczba całkowita, data) oraz zakresów (np. wiek od 18 do 99).
+Jaką rolę pełni atrybut required w HTML? Pełni rolę walidacji po stronie klienta (przeglądarki). Zapobiega wysłaniu pustego formularza, zanim dane w ogóle trafią na serwer.
+Dlaczego łączymy te technologie? Walidacja w HTML poprawia komfort użytkownika (szybka informacja o błędzie), natomiast walidacja XSD po stronie serwera gwarantuje bezpieczeństwo i spójność bazy danych.
