@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sklep SYSTEM "sklep.dtd">
+<sklep>
+    <produkt id="p1">
+        <nazwa>MacBook Air</nazwa>
+        <cena waluta="PLN">5000</cena>
+        <kategoria>Laptopy</kategoria>
+    </produkt>
+    <produkt id="p2">
+        <nazwa>iPhone 15</nazwa>
+        <cena waluta="PLN">4000</cena>
+        <kategoria>Smartfony</kategoria>
+    </produkt>
+</sklep>

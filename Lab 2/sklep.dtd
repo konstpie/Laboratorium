@@ -1,0 +1,7 @@
+<!ELEMENT sklep (produkt+)>
+<!ELEMENT produkt (nazwa, cena, kategoria)>
+<!ATTLIST produkt id ID #REQUIRED>
+<!ELEMENT nazwa (#PCDATA)>
+<!ELEMENT cena (#PCDATA)>
+<!ATTLIST cena waluta CDATA #REQUIRED>
+<!ELEMENT kategoria (#PCDATA)>
