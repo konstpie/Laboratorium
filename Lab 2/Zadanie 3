@@ -1,0 +1,61 @@
+konstantykanafocki@Konstantys-MacBook-Air ~ % dscacheutil -q host -a name www.nasa.gov
+name: nasa-gov.go-vip.net
+alias: www.nasa.gov 
+ipv6_address: 2a04:fa87:fffd::c000:426c
+
+name: nasa-gov.go-vip.net
+alias: www.nasa.gov 
+ip_address: 192.0.66.108
+
+konstantykanafocki@Konstantys-MacBook-Air ~ % dig www.nasa.gov
+
+; <<>> DiG 9.10.6 <<>> www.nasa.gov
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50830
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+;; QUESTION SECTION:
+;www.nasa.gov.			IN	A
+
+;; ANSWER SECTION:
+www.nasa.gov.		174	IN	CNAME	nasa-gov.go-vip.net.
+nasa-gov.go-vip.net.	3577	IN	A	192.0.66.128
+
+;; Query time: 25 msec
+;; SERVER: 2a02:a302:0:1::10#53(2a02:a302:0:1::10)
+;; WHEN: Sun Feb 08 11:16:00 CET 2026
+;; MSG SIZE  rcvd: 90
+
+konstantykanafocki@Konstantys-MacBook-Air ~ % sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+
+
+Obserwacja 1: Po wpisaniu komendy dig www.wikipedia.org czas zapytania (Query time) wyniósł 45 ms. Przy powtórnym zapytaniu czas wyniósł 0 ms, co potwierdza działanie lokalnej pamięci podręcznej DNS.
+Obserwacja 2: Wykorzystano narzędzie dscacheutil, aby potwierdzić, że system macOS przechowuje mapowanie nazwy hosta na adres IP lokalnie w procesie mDNSResponder.
+Wniosek: Pamięć podręczna DNS na systemie macOS optymalizuje ruch sieciowy. Dzięki parametrowi TTL(zaobserwowanemu w dig), system wie, kiedy odświeżyć dane, aby uniknąć kierowania użytkownika na nieaktualne adresy IP (np. po zmianie serwera strony).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
